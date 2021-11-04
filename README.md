@@ -8,6 +8,22 @@ This project was built for [Pycord](https://github.com/Pycord-Development/pycord
 
 ----
 
+## Installation
+
+```sh
+git clone https://github.com/TropicalShadow/CogHotSwap
+cd CogHotSwap
+python -m pip install -U .
+```
+
+or if you have git, add this to your requirements.txt
+
+```sh
+git+https://github.com/TropicalShadow/CogHotSwap
+```
+
+----
+
 ## Coming Soon Features
 
 - [ ] List of unloaded cogs that can be loaded or have errored
