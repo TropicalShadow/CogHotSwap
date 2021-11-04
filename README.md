@@ -1,0 +1,33 @@
+# CogHotSwap
+
+> Work in progress
+
+You ever wish that your discord bot cogs would just reload by themselves? Well now you can, by adding just one line of code to your bot we will automate the reloading of all your cogs, and hopefully give you feed back (Coming Soon Feature).
+
+This project was built for [Pycord](https://github.com/Pycord-Development/pycord) a fork of [Discord.py](https://github.com/Rapptz/discord.py)
+
+----
+
+## Coming Soon Features
+
+- [ ] List of unloaded cogs that can be loaded or have errored
+- [ ] Enchance the reloading of the files
+
+----
+Examples [here](examples/basic_bot.py)
+
+```py
+from discord.ext.commands import Bot
+from coghotswap import Watcher
+
+bot = Bot("!")
+Watcher(bot, path="cogs")
+
+bot.start("token")
+```
+
+----
+
+## Need Support?
+
+Contact me on discord `RealName_123#2570`
