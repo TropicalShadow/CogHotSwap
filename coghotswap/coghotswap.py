@@ -32,7 +32,7 @@ class Watcher:
         "path",
         "debug",
         "loop",
-        "defaut_logger",
+        "default_logger",
         "preload"
     )
 
