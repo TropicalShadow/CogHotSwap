@@ -30,7 +30,7 @@ class Watcher:
     __slots__ = (
         "bot",
         "path",
-        "dedug",
+        "debug",
         "loop",
         "defaut_logger",
         "preload"
