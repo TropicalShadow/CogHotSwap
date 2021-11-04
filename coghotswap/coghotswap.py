@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Optional
 
 from discord.ext import commands
+from discord.errors import ExtensionAlreadyLoaded, ExtensionError
 from watchgod import Change, awatch
 
 
@@ -164,7 +165,7 @@ class Watcher:
         """Loads a cog file into the bot."""
         try:
             self.bot.load_extension(dot_cog_path, package=package)
-        except commands.ExtensionAlreadyLoaded:
+        except ExtensionAlreadyLoaded:
             return
         except Exception as exc:
             self.cog_error(exc)
@@ -198,7 +199,7 @@ class Watcher:
     @staticmethod
     def cog_error(exc: Exception):
         """Logs exceptions. TODO: Need thorough exception handling."""
-        if isinstance(exc, (commands.ExtensionError, SyntaxError)):
+        if isinstance(exc, (ExtensionError, SyntaxError)):
             logging.exception(exc)
 
     async def _preload(self):
