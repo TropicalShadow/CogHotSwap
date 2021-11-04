@@ -122,7 +122,7 @@ class Watcher:
     def get_cog_dot_path(self, file_path: str):
         filename = self.get_cog_name(file_path)
         new_dir = self.get_dotted_cog_path(file_path)
-        return f"{new_dir}.{filename.lower()}" if new_dir else f"{self.path}.{filename.lower()}"
+        return f"{new_dir}.{filename}" if new_dir else f"{self.path}.{filename}"
 
     def check_debug(self):
         """Determines if the watcher should be added to the event loop based on debug flags."""
