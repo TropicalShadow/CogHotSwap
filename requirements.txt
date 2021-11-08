@@ -1,1 +1,2 @@
 watchgod
+git+https://github.com/TropicalShadow/CogHotSwap

@@ -26,8 +26,8 @@ git+https://github.com/TropicalShadow/CogHotSwap
 
 ## Coming Soon Features
 
-- [ ] List of unloaded cogs that can be loaded or have errored
-- [ ] Enchance the reloading of the files
+- [x] List of unloaded cogs that can be loaded or have errored
+- [x] Enchance the reloading of the files
 
 ----
 Examples [here](examples/basic_bot.py)
@@ -39,7 +39,7 @@ from coghotswap import Watcher
 bot = Bot("!")
 Watcher(bot, path="cogs")
 
-bot.start("token")
+bot.run("token")
 ```
 
 ----

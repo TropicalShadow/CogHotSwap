@@ -1,1 +1,1 @@
-from .coghotswap import Watcher, watch 
+from .coghotswap import Watcher, ModuleStatus
